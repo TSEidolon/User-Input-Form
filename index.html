@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>User Input Form</title>
+</head>
+<body>
+<header> 
+  <h1>Pokemon Trainer Creator</h1> 
+</header>
+  <main>
+    <form class="form-container">
+      <fieldset class="box1"> 
+        <legend>User Information</legend>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Your Username" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <label for="dob">Date Of Birth</label>
+        <input type="date" name="dob" id="dob">
+        <label for="pnumber">Phone Number</label>
+        <input type="tel" name="pnumber" id="pnumber" placeholder="Optional">
+      </fieldset>
+      <fieldset class="box2">
+        <legend>Trainer Information</legend>
+        <label for="eyecolor">Eye Color</label>
+        <select name="eyecolor" id="eyecolor">
+          <option selected="true" disabled="disabled">Pick a Color</option>
+          <option value="Green">Green</option>
+          <option value="Blue">Blue</option>
+          <option value="Brown">Brown</option>
+          <option value="Black">Black</option>
+          <option value="Other">Other</option>
+        </select>
+<!--  -->
+        <div class="flexrow">
+        <legend>Additional Clothes</legend>
+          <label for="jacket">Jacket</label>
+          <input type="checkbox" name="jacklet" id="jacket">
+          <label for="hat">Hat</label>
+          <input type="checkbox" name="hat" id="hat">
+          <label for="gloves">Gloves</label>
+          <input type="checkbox" name="gloves" id="gloves">
+        </div>
+<!--  -->
+        <div class="flexrow">
+        <legend>Pick a Starter</legend>
+          <label for="chikorita">Chikorita</label>
+          <input type="radio" name="starter" id="chikorita" value="Chikorita">
+          <!--  -->
+          <label for="cyndaquil">Cyndaquil</label>
+          <input type="radio" name="starter" id="cyndaquil" value="Cyndaquil">
+          <!--  -->
+          <label for="totodile">Totodile</label>
+          <input type="radio" name="starter" id="totodile" value="Totodile">
+        </div>
+<!--  -->
+          <label for="comments">Comments</label>
+          <textarea name="comments" id="comments" cols="25" rows="5" placeholder="optional"></textarea>
+          <button type="submit" class="submit-btn">Submit</button>
+      </fieldset>
+    </form>
+  </main>
+<footer>
+  <p>&copy;Edgar Caballero 2022</p>
+</footer>
+</body>
+</html>

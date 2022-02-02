@@ -1,0 +1,74 @@
+
+.form-container {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  grid-template-columns:minmax(350px, 1fr);
+
+  
+
+}
+
+form {
+  width: 100%;
+ 
+
+  
+}
+
+.box1, .box2 {
+  display: flex;
+  gap: 0.7rem;
+  flex-direction: column;
+  width:20%;
+  font-family: 'PT Sans Narrow', sans-serif;
+
+ 
+}
+
+input {
+  font-size: 0.8rem;
+}
+label, .flexrow legend {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.flexrow{
+  flex-direction: row;
+}
+
+.flexrow label{
+  font-size: 0.9rem;
+}
+
+
+header{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: rgb(28, 189, 189);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+footer{
+  font-family: 'PT Sans Narrow', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(28, 189, 189);
+  border-radius: 5px;
+  margin-top: 1rem;
+ 
+}
+  
+
+
+.submit-btn{
+  background-color: rgb(28, 189, 189);
+}
+.submit-btn:hover {
+  background-color: rgb(45, 218, 218);
+}
+
